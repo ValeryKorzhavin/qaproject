@@ -6,7 +6,7 @@ def application(env, start_response):
 
     result = ""
     for arg in env['QUERY_STRING'].split("&"):
-        result += arg + "<br>"
+        result += arg + "\n"
 
 
     start_response(response, [content])
